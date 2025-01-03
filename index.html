@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button onclick="clearDisplay()" style="--i: 0;">C</button>
+            <button onclick="appendValue('/')" style="--i: 1;">/</button>
+            <button onclick="appendValue('*')" style="--i: 2;">*</button>
+            <button onclick="deleteLast()" style="--i: 3;">DEL</button>
+            <button onclick="appendValue('7')" style="--i: 4;">7</button>
+            <button onclick="appendValue('8')" style="--i: 5;">8</button>
+            <button onclick="appendValue('9')" style="--i: 6;">9</button>
+            <button onclick="appendValue('-')" style="--i: 7;">-</button>
+            <button onclick="appendValue('4')" style="--i: 8;">4</button>
+            <button onclick="appendValue('5')" style="--i: 9;">5</button>
+            <button onclick="appendValue('6')" style="--i: 10;">6</button>
+            <button onclick="appendValue('+')" style="--i: 11;">+</button>
+            <button onclick="appendValue('1')" style="--i: 12;">1</button>
+            <button onclick="appendValue('2')" style="--i: 13;">2</button>
+            <button onclick="appendValue('3')" style="--i: 14;">3</button>
+            <button onclick="calculateResult()" style="--i: 15;">=</button>
+            <button onclick="appendValue('0')" class="zero" style="--i: 16;">0</button>
+            <button onclick="appendValue('.')" style="--i: 17;">.</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
